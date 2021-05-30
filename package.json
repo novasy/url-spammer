@@ -1,0 +1,19 @@
+{
+  "name": "novasy",
+  "version": "3.6.1-0.4",
+  "description": "",
+  "main": "bot.js",
+  "dependencies": {
+    "discord.js": "^12.5.1",
+    "request": "^2.88.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Novasy#2012",
+  "license": "MIT",
+  "keywords": [
+    "discord.js"
+  ]
+}
