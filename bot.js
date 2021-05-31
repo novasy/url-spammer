@@ -26,15 +26,15 @@ const config = require("./config.json")
                     novasyyyy(config.vanity, config.guild, config.token)
                          }}, 1*500)})// novasy
 
-    async function novasyyyy(url, tkn) {
+    async function novasyyyy(vanity, token) {
         const spammer = {//novasy
             url: `https://discord.com/api/v8/guilds/${config.sunucu}/vanity-url`,
                 body: {
-                    code: `${url}`},
+                    code: `${vanity}`},
     json: true,
         method: 'PATCH',
             headers: {//novasy
-                "Authorization": `Bot ${tkn}`
+                "Authorization": `Bot ${token}`
                     }
                         };
 
