@@ -1,5 +1,6 @@
 const Discord = require("discord.js")
-const client = new Discord.Client()        
+const client = new Discord.Client() 
+const request = require('request')
 const config = require("./config.json")
 
 // selam ben novasy
@@ -25,17 +26,21 @@ const config = require("./config.json")
                     novasyyyy(config.vanity, config.guild, config.token)
                          }}, 1*500)})// novasy
 
+    async function novasyyyy(url, sunucu, tkn) {
+        const spammer = {//novasy
+            url: `https://discord.com/api/v8/guilds/${config.sunucu}/vanity-url`,
+                body: {
+                    code: `${url}`},
+    json: true,
+        method: 'PATCH',
+            headers: {//novasy
+                "Authorization": `Bot ${tkn}`
+                    }
+                        };
 
-    async function novasyyyy(url, sunucu, token) {
-        console.log(`"${url}" Durum: ❌`)
-            const spammer = {// novasy
-                url: `https://discord.com/api/v8/guilds/${sunucu}/vanity-url`,
-                    body: {
-                        code: `${url}`},// novasy
-                            json: true,
-                                method: 'PATCH',// novasy
-                                    headers: {
-                                        "Authorization": `Bot ${token}`}}};
+    request(spammer, (err, res, body) => {
+        if (err) {//novasy
+            return console.log(err)}})}
 
 
 client.login(config.token).catch(err => { console.log("Token Hatalı !")})
