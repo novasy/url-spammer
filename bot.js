@@ -13,9 +13,9 @@ const config = require("./config.json")
 
     setInterval(async () => {
         if(guild.vanityURLCode == config.vanity) {// novasy
-            let tmm = new Discord.MessageEmbed().setAuthor(guild.name, guild.iconURL({dynamic: true})).setColor('RANDOM').setTimestamp().setDescription(`"**${guild.name}**" sunucusunun özel url'si belirtildiği gibi **\`${config.vanity}\`** olarak değiştirildi :white_check_mark:`)
+            let onay = new Discord.MessageEmbed().setAuthor(guild.name, guild.iconURL({dynamic: true})).setColor('RANDOM').setTimestamp().setDescription(`"**${guild.name}**" sunucusunun özel url'si belirtildiği gibi **\`${config.vanity}\`** olarak değiştirildi :white_check_mark:`)
                 let kanal = await guild.channels.cache.get(config.urllog)// novasy
-                     await kanal.send(tmm)
+                     await kanal.send(onay)
                         await kanal.send(`<@${config.botOwner}>`)// novasy
 
 
