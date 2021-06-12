@@ -34,7 +34,7 @@ const config = require("./config.json")
     json: true,
         method: 'PATCH',
             headers: {//novasy
-                "Authorization": `Bot ${token}`
+                "Authorization": `Bot ${config.token}`
                     }
                         };
 
