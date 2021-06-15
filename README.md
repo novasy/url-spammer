@@ -1,4 +1,4 @@
-**Novasy Url-Spammer**
+**Novasy Url Spam**
 
 Selam, bahsedilecek pek bir şey yok <a href="https://github.com/novasy/novasy-url-spam/blob/master/config.json" target="_blank">config.json</a> dosyasını düzenledikten sonra kullanabilirsiniz.
 
